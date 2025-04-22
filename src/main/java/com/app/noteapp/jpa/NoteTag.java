@@ -19,12 +19,12 @@ public class NoteTag implements Serializable {
 	private NoteTagId id;
 
 	@ManyToOne
-	@MapsId("\"noteId\"")
+	@MapsId("noteId")
 	@JoinColumn(name = "\"noteId\"")
 	private Note note;
 
 	@ManyToOne
-	@MapsId("\"tagId\"")
+	@MapsId("tagId")
 	@JoinColumn(name = "\"tagId\"")
 	private Tag tag;
 

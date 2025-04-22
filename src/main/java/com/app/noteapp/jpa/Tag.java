@@ -6,11 +6,15 @@ import java.util.Set;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "\"Tag\"")
 public class Tag implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -22,7 +26,7 @@ public class Tag implements Serializable {
 
 	private String tag;
 
-	@OneToMany(mappedBy = "\"tag\"", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "tag", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<NoteTag> noteTags = new HashSet<>();
 
 	public Tag() {

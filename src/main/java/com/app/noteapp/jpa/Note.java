@@ -39,7 +39,7 @@ public class Note implements Serializable {
 	@JoinColumn(name = "\"userId\"", nullable = false)
 	private User user;
 
-	@OneToMany(mappedBy = "\"note\"", cascade = CascadeType.ALL, orphanRemoval = true)
+	@OneToMany(mappedBy = "note", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<NoteTag> noteTags = new HashSet<>();
 
 	// No-arg constructor

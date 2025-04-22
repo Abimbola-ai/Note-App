@@ -44,7 +44,7 @@ public class User implements Serializable {
 	private String password;
 
 	@Column(name = "\"emailVerified\"")
-	private boolean emailVerified;
+	private Boolean emailVerified;
 
 	@Column(name = "\"createdOn\"")
 	private Timestamp createdOn;
@@ -106,7 +106,7 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
-	public boolean isEmailVerified() {
+	public Boolean isEmailVerified() {
 		return emailVerified;
 	}
 
