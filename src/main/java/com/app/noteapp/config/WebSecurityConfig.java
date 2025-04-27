@@ -63,8 +63,8 @@ public class WebSecurityConfig {
 	SecurityFilterChain securityFilterChainTest(HttpSecurity http, MvcRequestMatcher.Builder mvc) throws Exception {
 		http.sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests((requests) -> requests.requestMatchers(PathRequest.toH2Console()).permitAll()
-						.requestMatchers(mvc.pattern("/user/verify/email")).permitAll()
-						.requestMatchers(this.getMatchers(mvc)).permitAll().anyRequest().authenticated())
+						.requestMatchers(mvc.pattern("/user/**")).permitAll().requestMatchers(this.getMatchers(mvc))
+						.permitAll().anyRequest().authenticated())
 				.exceptionHandling((handler) -> handler.authenticationEntryPoint(this.customAuthEntryPoint))
 				.addFilterBefore(this.jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class)
 				.headers((headers) -> headers.frameOptions((frame) -> frame.sameOrigin())).cors(withDefaults())
