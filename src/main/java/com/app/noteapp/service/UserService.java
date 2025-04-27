@@ -19,6 +19,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import com.app.noteapp.exception.domain.EmailExistException;
@@ -30,6 +31,7 @@ import com.app.noteapp.provider.ResourceProvider;
 import com.app.noteapp.repository.UserRepository;
 import com.app.noteapp.security.JwtService;
 
+@Service
 public class UserService {
 	final Logger logger = LoggerFactory.getLogger(this.getClass());
 

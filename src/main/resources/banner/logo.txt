@@ -1,0 +1,14 @@
+${Ansi.DEFAULT}
+${Ansi.GREEN}ooooo      ooo               .                   .o.                             
+${Ansi.GREEN}`888b.     `8'             .o8                  .888.                            
+${Ansi.GREEN} 8 `88b.    8   .ooooo.  .o888oo  .ooooo.      .8"888.     oo.ooooo.  oo.ooooo.  
+${Ansi.GREEN} 8   `88b.  8  d88' `88b   888   d88' `88b    .8' `888.     888' `88b  888' `88b 
+${Ansi.GREEN} 8     `88b.8  888   888   888   888ooo888   .88ooo8888.    888   888  888   888 
+${Ansi.GREEN} 8       `888  888   888   888 . 888    .o  .8'     `888.   888   888  888   888 
+${Ansi.GREEN}o8o        `8  `Y8bod8P'   "888" `Y8bod8P' o88o     o8888o  888bod8P'  888bod8P' 
+${Ansi.GREEN}                                                            888        888       
+${Ansi.GREEN}                                                           o888o      o888o      
+${Ansi.GREEN}
+${Ansi.GREEN}                  A note taking application.
+${Ansi.RED}                               :: Spring Boot${spring-boot.formatted-version} :: 
+${Ansi.DEFAULT}                                                                                 

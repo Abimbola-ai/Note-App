@@ -29,12 +29,6 @@ import com.app.noteapp.provider.ResourceProvider;
 @EnableWebSecurity
 public class WebSecurityConfig {
 
-//	@Bean("test")
-//	SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//		http.csrf().disable().authorizeHttpRequests().requestMatchers("/**").permitAll().anyRequest().permitAll();
-//		return http.build();
-//	}
-//	
 	@Autowired
 	ResourceProvider provider;
 

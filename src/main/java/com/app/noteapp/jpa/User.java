@@ -54,7 +54,7 @@ public class User implements Serializable {
 	private List<Note> notes;
 
 	// Default Constructor
-	protected User() {
+	public User() {
 	}
 
 	// Getters and Setters

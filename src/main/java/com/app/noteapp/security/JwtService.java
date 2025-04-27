@@ -7,11 +7,13 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.app.noteapp.provider.ResourceProvider;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
+@Component
 public class JwtService {
 	final Logger logger = LoggerFactory.getLogger(this.getClass());
 
